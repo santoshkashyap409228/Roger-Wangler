@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const countdownEl = document.getElementById("countdown");
     if (!countdownEl) return;
 
-    const DURATION_MS = 5 * 60 * 60 * 1000; // 5 hours
+    const DURATION_MS = (4 * 60 * 60 + 39 * 60) * 1000; // 4 hours 39 minutes
     const STORAGE_KEY = "publish_end_time_v1";
 
     let endTime = Number(localStorage.getItem(STORAGE_KEY));
